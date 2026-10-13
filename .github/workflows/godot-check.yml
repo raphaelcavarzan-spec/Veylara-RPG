@@ -28,3 +28,18 @@ jobs:
 
       - name: Smoke-test main scene
         run: godot --headless --path . --quit-after 10
+
+      - name: Check Isildur sprite regions and direction visibility
+        run: godot --headless --path . --script res://tests/test_isildur_sprites.gd
+
+      - name: Render Isildur preview
+        run: godot --headless --path . --script res://tests/render_isildur_preview.gd
+
+      - name: Upload rendered preview
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: isildur-visual-preview
+          path: isildur-preview.png
+          if-no-files-found: warn
+          retention-days: 7
