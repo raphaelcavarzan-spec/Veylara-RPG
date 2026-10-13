@@ -28,3 +28,6 @@ jobs:
 
       - name: Smoke-test main scene
         run: godot --headless --path . --quit-after 10
+
+      - name: Check Isildur sprite regions and direction visibility
+        run: godot --headless --path . --script res://tests/test_isildur_sprites.gd
