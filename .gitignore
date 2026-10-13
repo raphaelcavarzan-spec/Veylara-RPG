@@ -1,0 +1,18 @@
+# Godot generated data
+.godot/
+
+# Exported builds
+/build/
+/dist/
+/exports/
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.bak
+
+# IDE settings (keep project files, ignore personal workspace)
+.vscode/
+.idea/
