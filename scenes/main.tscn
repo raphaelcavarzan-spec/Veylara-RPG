@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3]
+[gd_scene load_steps=9 format=3]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_player"]
+[ext_resource type="Texture2D" path="res://assets/sprites/isildur/isildur_sheet.png" id="2_isildur"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_player"]
 size = Vector2(24, 28)
@@ -32,9 +33,40 @@ y_sort_enabled = true
 position = Vector2(640, 360)
 script = ExtResource("1_player")
 
-[node name="TemporaryVisual" type="Polygon2D" parent="WorldSort/Player"]
-polygon = PackedVector2Array(0, -18, 11, -5, 8, 12, 0, 17, -8, 12, -11, -5)
-color = Color(0.2, 0.65, 0.38, 1)
+[node name="SpriteFront" type="Sprite2D" parent="WorldSort/Player"]
+texture = ExtResource("2_isildur")
+region_enabled = true
+region_rect = Rect2(658, 34, 135, 246)
+offset = Vector2(0, -123)
+scale = Vector2(0.5, 0.5)
+texture_filter = 1
+
+[node name="SpriteBack" type="Sprite2D" parent="WorldSort/Player"]
+visible = false
+texture = ExtResource("2_isildur")
+region_enabled = true
+region_rect = Rect2(652, 291, 130, 238)
+offset = Vector2(0, -119)
+scale = Vector2(0.5, 0.5)
+texture_filter = 1
+
+[node name="SpriteLeft" type="Sprite2D" parent="WorldSort/Player"]
+visible = false
+texture = ExtResource("2_isildur")
+region_enabled = true
+region_rect = Rect2(656, 545, 130, 214)
+offset = Vector2(0, -107)
+scale = Vector2(0.5, 0.5)
+texture_filter = 1
+
+[node name="SpriteRight" type="Sprite2D" parent="WorldSort/Player"]
+visible = false
+texture = ExtResource("2_isildur")
+region_enabled = true
+region_rect = Rect2(1028, 771, 135, 222)
+offset = Vector2(0, -111)
+scale = Vector2(0.5, 0.5)
+texture_filter = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="WorldSort/Player"]
 shape = SubResource("RectangleShape2D_player")
