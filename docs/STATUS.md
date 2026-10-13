@@ -13,8 +13,9 @@
 - [x] Cenário fixo/centralizado validado manualmente pela desenvolvedora.
 - [x] Ficha original de Isildur enviada ao GitHub e organizada em `assets/sprites/isildur/isildur_sheet.png`.
 - [x] Primeira execução do GitHub Actions concluída com sucesso para importação e smoke test.
-- [ ] Preparar recortes utilizáveis da ficha e integrar os sprites originais de Isildur à cena.
-- [ ] Validar movimento/animações com o sprite real no Godot.
+- [x] Adicionar quatro regiões direcionais da ficha original à cena principal via Sprite2D.
+- [ ] Validar importação automática e recortes na execução do GitHub Actions.
+- [ ] Validar visualmente as quatro poses e o movimento no Godot local; animação de caminhada completa permanece pendente.
 - [ ] Construir o mapa explorável de Brumavale usando os recursos visuais aprovados.
 - [ ] Implementar NPCs, diálogos e missões.
 
@@ -48,11 +49,10 @@ Não descrever testes manuais como testes automatizados, nem declarar uma valida
 
 ## Próximos passos
 
-1. Inspecionar dimensões e fundo da ficha original.
-2. Preparar os recortes dos sprites aprovados mantendo a imagem original intacta.
-3. Integrar Isildur à cena principal sem alterar o design.
-4. Reexecutar o workflow e validar o resultado visual localmente.
-5. Construir Brumavale em incrementos pequenos e testáveis.
+1. Verificar o resultado do GitHub Actions após a integração inicial.
+2. Ajustar regiões/escala dos sprites se os testes e a inspeção visual indicarem necessidade.
+3. Validar o resultado no Godot local; a caminhada animada completa ainda precisa de quadros aprovados.
+4. Construir Brumavale em incrementos pequenos e testáveis.
 
 ## Organização prevista
 
