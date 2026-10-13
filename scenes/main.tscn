@@ -25,11 +25,14 @@ color = Color(0.09, 0.13, 0.12, 1)
 polygon = PackedVector2Array(100, 100, 1180, 100, 1180, 620, 100, 620)
 color = Color(0.19, 0.25, 0.19, 1)
 
-[node name="Player" type="CharacterBody2D" parent="."]
+[node name="WorldSort" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="Player" type="CharacterBody2D" parent="WorldSort"]
 position = Vector2(640, 360)
 script = ExtResource("1_player")
 
-[node name="TemporaryVisual" type="Polygon2D" parent="Player"]
+[node name="TemporaryVisual" type="Polygon2D" parent="WorldSort/Player"]
 polygon = PackedVector2Array(0, -18, 11, -5, 8, 12, 0, 17, -8, 12, -11, -5)
 color = Color(0.2, 0.65, 0.38, 1)
 
@@ -64,10 +67,10 @@ position = Vector2(1180, 360)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BoundaryRight"]
 shape = SubResource("WallVertical")
 
-[node name="TestObstacle" type="StaticBody2D" parent="."]
+[node name="TestObstacle" type="StaticBody2D" parent="WorldSort"]
 position = Vector2(640, 250)
 
-[node name="ObstacleVisual" type="Polygon2D" parent="TestObstacle"]
+[node name="ObstacleVisual" type="Polygon2D" parent="WorldSort/TestObstacle"]
 polygon = PackedVector2Array(-90, -14, 90, -14, 90, 14, -90, 14)
 color = Color(0.42, 0.32, 0.20, 1)
 
