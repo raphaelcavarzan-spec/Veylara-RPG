@@ -36,36 +36,36 @@ script = ExtResource("1_player")
 [node name="SpriteFront" type="Sprite2D" parent="WorldSort/Player"]
 texture = ExtResource("2_isildur")
 region_enabled = true
-region_rect = Rect2(658, 34, 135, 246)
-offset = Vector2(0, -123)
-scale = Vector2(0.5, 0.5)
+region_rect = Rect2(329, 17, 67.5, 123)
+offset = Vector2(0, -61.5)
+scale = Vector2(1, 1)
 texture_filter = 1
 
 [node name="SpriteBack" type="Sprite2D" parent="WorldSort/Player"]
 visible = false
 texture = ExtResource("2_isildur")
 region_enabled = true
-region_rect = Rect2(652, 291, 130, 238)
-offset = Vector2(0, -119)
-scale = Vector2(0.5, 0.5)
+region_rect = Rect2(326, 145.5, 65, 119)
+offset = Vector2(0, -59.5)
+scale = Vector2(1, 1)
 texture_filter = 1
 
 [node name="SpriteLeft" type="Sprite2D" parent="WorldSort/Player"]
 visible = false
 texture = ExtResource("2_isildur")
 region_enabled = true
-region_rect = Rect2(656, 545, 130, 214)
-offset = Vector2(0, -107)
-scale = Vector2(0.5, 0.5)
+region_rect = Rect2(328, 272.5, 65, 107)
+offset = Vector2(0, -53.5)
+scale = Vector2(1, 1)
 texture_filter = 1
 
 [node name="SpriteRight" type="Sprite2D" parent="WorldSort/Player"]
 visible = false
 texture = ExtResource("2_isildur")
 region_enabled = true
-region_rect = Rect2(1028, 771, 135, 222)
-offset = Vector2(0, -111)
-scale = Vector2(0.5, 0.5)
+region_rect = Rect2(514, 385.5, 67.5, 111)
+offset = Vector2(0, -55.5)
+scale = Vector2(1, 1)
 texture_filter = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="WorldSort/Player"]
